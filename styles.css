@@ -34,6 +34,7 @@ body {
     height: 1%;
     padding-bottom: 2rem;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .filled {
