@@ -3,13 +3,21 @@
 } */
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: black lightgray;
+    /* scrollbar-color: #CB1517 white; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+::-webkit-scrollbar {
+    background: white;
+ }
+ ::-webkit-scrollbar-thumb {
+    background: #CB1517;
+    border-style: hidden;
+    border-radius: .3rem
+ }
 
 html {
     scroll-behavior: smooth;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -31,10 +39,10 @@ body {
     top: 0;
     position: fixed;
     width: 100%;
-    height: 1%;
-    padding-bottom: 2rem;
+    height: .5rem;
+    padding-bottom: 1.6rem;
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    z-index: 1;
 }
 
 .filled {
@@ -55,10 +63,11 @@ body {
     margin: 1rem .8rem;
     border-radius: .3rem;
     font-weight: 700;
+    z-index: 1;
 }
 
 .navbar img {
-    margin: -.5rem 0 0 1rem;
+    margin: -.5rem 0 0 .7rem;
     max-height: 3rem;
     float: left;
     cursor: pointer;
@@ -99,14 +108,74 @@ p {
     font-size: larger;
 }
 
+/* ------------------LICENSE FILTER------------------ */
+/* ------------------LICENSE FILTER------------------ */
+/* ------------------LICENSE FILTER------------------ */
+
+.licensefilter {
+    position: sticky;
+    top: 6.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    background: linear-gradient(to right, #a3a3a3, #777777);
+    margin: 1rem -.2rem;
+    border-radius: .3rem;
+    font-weight: 700;
+}
+
+.licensefilter ul{
+    padding: .3rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+.licensefilter li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 0 .4rem .25rem .4rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    content: url(src/cross.png);
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+}
+
+.licensefilter label {
+    cursor: point;
+}
+
+input[type="checkbox"]:checked {
+    content: url(src/check.png);
+    height: 15px;
+    width: 15px;
+}
+
+.licensefilter li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: .3rem;
+}
+.licensefilter input:hover {
+    cursor: pointer;
+}
+
 /* ------------------BIKE GRID------------------ */
 /* ------------------BIKE GRID------------------ */
 /* ------------------BIKE GRID------------------ */
 
+.main .bikescontainer .brandtitle {
+    display: block;
+    margin: 0;
+}
+
 .bikescontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 2%;
+    column-gap: 15px;
 }
 
 .bikescontainer .fa {
@@ -117,7 +186,7 @@ p {
     padding: 1rem;
     min-height: 350px;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .bikescontainer .fa:hover {
@@ -152,14 +221,14 @@ p {
     bottom: 1rem;
 }
 
-.contactleft {
+.contactform {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
 }
 
-.contactleft button {
+.contactform button {
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -172,7 +241,7 @@ p {
     cursor: pointer;
 }
 
-.contactleft img {
+.contactform img {
     width: 25px;
 }
 
@@ -205,7 +274,7 @@ p {
 }
 
 .contactinput:hover {
-    box-shadow: 5px 5px rgba(255, 255, 255, .4);
+    box-shadow:rgba(255, 255, 255, .4);
 }
 
 .contactinput:focus {
@@ -213,14 +282,16 @@ p {
     box-shadow: 5px 5px rgba(255, 255, 255, .4);
 }
 
-.contactleft textarea {
+.contactform textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: .3rem;
 }
 
-.contactright img {
-    width: 20%;
+.contactform p {
+    color: lightgray;
+    font-size: smaller;
+    padding: 0;
 }
 
 /* ------------------BACK TO TOP------------------ */
