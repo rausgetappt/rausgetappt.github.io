@@ -4,33 +4,354 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="media/rocketemoji.png">
-    <title>Cryptomoon</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <link rel="icon" type="image/svg" href="src/motorcyclewhite.svg"/>
+    <title>MotorcycList</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video autoplay loop muted plays-inline class="backgroundvideo">
-        <source src="media/videobackground1.mp4" type="video/mp4">
-    </video>
-    <div class="content">
-        <a href="https://www.github.com/rausgetappt" target="_blank">Portfolio</a>
-        <h2>Test 🪙 that will 🚀 test 🌚!</h2>
+    <div class="progressbar">
+        <div class="filled"></div>
     </div>
 
-    <div class="stock">
-        <section>
-            <h3>dklfjgdlfkghfghjdyfjhg djfkh </h3>
+    <div class="navlogos">
+        <img class="logo" src="src/motorcyclewhite.svg" alt="" onclick="location.href='#';">
+        <img class="motorcyclist" src="src/motorcyclistfont.svg" alt="MotorcycList" onclick="location.href='#';">
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#bikescontainer">Bikes</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="pages/about.html">About</a></li>
+        </ul>
+    </nav>
+    <button class="burger">
+        <div class="bar"></div>
+    </button>
+
+    <main id="content">
+        <section class="videohead">
+            <video autoplay loop muted plays-inline src="src/websiteloop.mp4" type="video/mp4"></video>
+            <h1 class="title">
+                MotorcycList
+            </h1>
         </section>
-    </div>
-    <div class="sub1">
-        <h1>about</h1>
-    </div>
-    <div class="sub2">
-        <h1>legal disclosure</h1>
-    </div>
-    <div class="sub3">
-        <h1>socials</h1>
-    </div>
+        
+        <section class="filter">
+            <div class="licensefilter">
+                <ul>
+                    <li onclick="checka1.click()">
+                        <input onclick="checka1.click()" type="checkbox" id="checka1" class="checkbox">
+                        <label for="check">A1</label>
+                    </li>
+                    <li onclick="checka2.click()">
+                        <input onclick="checka2.click()" type="checkbox" id="checka2" class="checkbox">
+                        <label for="check">A2</label>
+                    </li>
+                    <li onclick="checka.click()">
+                        <input onclick="checka.click()" type="checkbox" id="checka" class="checkbox">
+                        <label for="check">A</label>
+                    </li>
+                </ul>
+            </div>
+
+            <h1>Aprilia</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa1">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia RS 125" class="bikeimg">
+                        <h2>Aprilia RS 125</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa1">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono 125" class="bikeimg">
+                        <h2>Aprilia Tuono 125</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa1">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia SX 125" class="bikeimg">
+                        <h2>Aprilia SX 125</h1>
+                    </a>
+                </div>
+
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia RS 660" class="bikeimg">
+                        <h2>Aprilia RS 660</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono 660" class="bikeimg">
+                        <h2>Aprilia Tuono 660</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia Shiver 900" class="bikeimg">
+                        <h2>Aprilia Shiver 900</h1>
+                    </a>
+                </div>
+
+
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
+                        <h2>Aprilia RSV4</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono V4" class="bikeimg">
+                        <h2>Aprilia Tuono V4</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia Dorsoduro 900" class="bikeimg">
+                        <h2>Aprilia Dorsoduro 900</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <h1>BMW</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/bikes/bmwm1000rr.png" alt="BMW F 750 GS" class="bikeimg">
+                        <h2>BMW F 750 GS</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="BMW F 900 R" class="bikeimg">
+                        <h2>BMW F 900 R</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa2">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="BMW G 310 R" class="bikeimg">
+                        <h2>BMW G 310 R</h1>
+                    </a>
+                </div>
+
+                
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/bikes/bmwm1000rr.png" alt="BMW M1000RR" class="bikeimg">
+                        <h2>BMW M1000RR</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="BMW S 1000 RR" class="bikeimg">
+                        <h2>BMW S 1000 RR</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="BMW R 1250 GS" class="bikeimg">
+                        <h2>BMW R 1250 GS</h1>
+                    </a>
+                </div>
+
+
+            </div>
+            <h1>Ducati</h1>
+            <div class="bikescontainer" id="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/bikes/ducatipanigalev4r.png" alt="Ducati Panigale V4R" class="bikeimg">
+                        <h2>Ducati Panigale V4R</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>Honda</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/bikes/hondacbr1000rrrfireblade.png" alt="Honda CBR1000RR-R Fireblade" class="bikeimg">
+                        <h2>Honda CBR1000RR-R Fireblade</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>Husqvarna</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <h2>Husqvarna 701 Supermoto</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <h2>Husqvarna 701 Supermoto</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <h2>Husqvarna 701 Supermoto</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>Kawasaki</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/bikes/kawasakizx10rr.png" alt="Kawasaki Ninja ZX-10RR" class="bikeimg">
+                        <h2>Kawasaki Ninja ZX-10RR</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
+                        <h2>Aprilia RSV4</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>KTM</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <h2>KTM 1290 Super Duke R</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <h2>KTM 1290 Super Duke R</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <h2>KTM 1290 Super Duke R</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>MV Agusta</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <h2>MV Agusta F4 RC</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <h2>MV Agusta F4 RC</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <h2>MV Agusta F4 RC</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>Suzuki</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/bikes/suzukigsxr1000.png" alt="Suzuki GSX-R1000" class="bikeimg">
+                        <h2>Suzuki GSX-R1000</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <h2>MV Agusta F4 RC</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <h2>MV Agusta F4 RC</h1>
+                    </a>
+                </div>
+            </div>
+            <h1>Yamaha</h1>
+            <div class="bikescontainer">
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+                <div onclick="location.href='#';" class="fa">
+                    <a href="">
+                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <h2>Yamaha YZF-R1</h1>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contactcontainer">
+                <form action="" class="contactform">
+                    <div class="contacttitle">
+                        <h1>Contact</h1>
+                    </div>
+                    <input type="text" name="name" placeholder="Name" class="contactinput" required>
+                    <input type="email" name="email" placeholder="Email" class="contactinput" required>
+                    <textarea name="message" placeholder="Message" class="contactinput" required></textarea>
+                    <p>Your email address will not be published.</p>
+                    <button type="submit">Send<img src="src/mail.svg" alt=""></button>
+                </form>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <a href="#" class="backtotop">
+            <img src="src/arrowup.svg" alt="Back To Top">
+        </a>
+    </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>

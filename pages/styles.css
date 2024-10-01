@@ -1,0 +1,383 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+* {
+    /* scrollbar-color: #CB1517 white; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+    background: white;
+} */
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin-top: 0;
+}
+
+body {
+    color: black;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ------------------PROGRESSBAR------------------ */
+/* ------------------PROGRESSBAR------------------ */
+/* ------------------PROGRESSBAR------------------ */
+
+.progressbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: .5rem;
+    padding-bottom: 1.6rem;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.filled {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #CB1517, #cb1552);
+}
+
+/* ------------------NAVBAR------------------ */
+/* ------------------NAVBAR------------------ */
+/* ------------------NAVBAR------------------ */
+
+.navbar {
+    position: sticky;
+    top: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    background: linear-gradient(to right, #CB1517, #cb1552);
+    margin: 1rem .8rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.navlogos .logo {
+    position: fixed;
+    margin: 1.5rem 0 0 1rem;
+    max-height: 3rem;
+    float: left;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.navlogos .motorcyclist {
+    position: fixed;
+    margin: 2rem 0 0 4.5rem;
+    max-height: 2.3rem;
+    float: left;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav ul {
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 .4rem .25rem .4rem;
+    font-size: x-large;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar a:hover {
+    border-radius: .3rem;
+    border: 2px solid white;
+}
+
+/* ------------------MAIN------------------ */
+/* ------------------MAIN------------------ */
+/* ------------------MAIN------------------ */
+
+main {
+    margin: 2rem 1rem 0 1rem;
+}
+
+p {
+    font-size: larger;
+}
+
+/* ------------------LICENSE FILTER------------------ */
+/* ------------------LICENSE FILTER------------------ */
+/* ------------------LICENSE FILTER------------------ */
+
+.licensefilter {
+    position: sticky;
+    top: 6.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    background: linear-gradient(to right, #a3a3a3, #777777);
+    margin: 1rem -.2rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.licensefilter ul{
+    padding: .3rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+.licensefilter li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 0 .4rem .25rem .4rem;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    appearance: none;
+    content: url(src/check.png);
+    height: 15px;
+    width: 15px;
+}
+
+.licensefilter li:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: .3rem;
+}
+.licensefilter input:hover,
+.licensefilter label:hover {
+    cursor: pointer;
+}
+
+/* ------------------BIKE GRID------------------ */
+/* ------------------BIKE GRID------------------ */
+/* ------------------BIKE GRID------------------ */
+
+.main .bikescontainer .brandtitle {
+    display: block;
+    margin: 0;
+}
+
+.bikescontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 15px;
+}
+
+.bikescontainer .fa {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: .3rem;
+    padding: 1rem;
+    min-height: 350px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.bikescontainer .fa:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.bikescontainer .bikeimg {
+    width: 15%;
+    min-width: 150px
+}
+
+.bikescontainer a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ------------------CONTACT FORM------------------ */
+/* ------------------CONTACT FORM------------------ */
+/* ------------------CONTACT FORM------------------ */
+
+.contactcontainer {
+    background-color: gray;
+    margin: 0 -1rem -4.4rem -1rem;
+    border-radius: .3rem;
+}
+
+.contactcontainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 1rem;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: rgb(33, 33, 33);
+    border-radius: .3rem;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.contactform button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: larger;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: .3rem;
+    background: linear-gradient(to right, #CB1517, #cb1552);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+
+.contactform button:hover {
+    border: 2px solid white;
+}
+
+.contactform img {
+    width: 25px;
+}
+
+.contacttitle {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.contactinput {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: .3rem;
+    border: 2px solid transparent;
+}
+
+.contactinput:hover {
+    box-shadow:rgba(255, 255, 255, .4);
+}
+
+.contactinput:focus {
+    border: 2px solid #CB1517;
+    box-shadow: 5px 5px rgba(255, 255, 255, .4);
+}
+
+.contactform textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: .3rem;
+}
+
+.contactform p {
+    color: lightgray;
+    font-size: smaller;
+    padding: 0;
+}
+
+/* ------------------BACK TO TOP------------------ */
+/* ------------------BACK TO TOP------------------ */
+/* ------------------BACK TO TOP------------------ */
+
+.backtotop {
+    position: fixed;
+    transition: opacity .15s ease-in-out;
+    opacity: 0;
+    bottom: .5rem;
+    right: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #CB1517, #cb1552);
+    border-radius: .3rem;
+}
+
+.backtotop.show {
+    opacity: 1;
+}
+
+.backtotop img {
+    padding: .75rem;
+    width: 30px;
+}
+
+.backtotop img:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ------------------MOBILE------------------ */
+/* ------------------MOBILE------------------ */
+/* ------------------MOBILE------------------ */
+
+@media screen and (max-width: 1100px) {
+    .navlogos .motorcyclist {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li {
+        display: none;
+    }
+    .navbar ul {
+        padding: 2rem 0;
+    }
+
+    .bikescontainer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    }
+    .bikescontainer .bikeimg {
+        width: 15%;
+        min-width: 100px
+    }
+    .bikescontainer .fa {
+        min-height: 200px;
+    }
+
+    .contactform {
+        max-width: 80%;
+        margin-bottom: -4rem;
+    }
+    .contactform input,
+    .contactform textarea {
+        max-width: 90%;
+    }
+
+    .backtotop {
+        border-radius: 50%;
+    }
+}
