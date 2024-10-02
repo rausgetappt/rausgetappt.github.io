@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="src/motorcyclewhite.svg"/>
+    <link rel="icon" type="image/svg" href="assets/motorcyclewhite.svg"/>
     <title>MotorcycList</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,29 +14,35 @@
     </div>
 
     <div class="navlogos">
-        <img class="logo" src="src/motorcyclewhite.svg" alt="" onclick="location.href='#';">
-        <img class="motorcyclist" src="src/motorcyclistfont.svg" alt="MotorcycList" onclick="location.href='#';">
+        <img class="logo" src="assets/motorcyclewhite.svg" alt="" onclick="location.href='#';">
+        <img class="motorcyclist" src="assets/motorcyclistfont.svg" alt="MotorcycList" onclick="location.href='#';">
     </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#bikescontainer">Bikes</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="pages/about.html">About</a></li>
-        </ul>
+    <nav class="burgermenu">
+        <input type="checkbox" id="menuactive">
+        <label for="menuactive" class="openmenu">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Menu / Menu_Alt_02"><path id="Vector" d="M11 17H19M5 12H19M11 7H19" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+        </label>
+        <div class="menucontainer">
+            <label for="menuactive" class="closemenu">
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" fill="#fff"/></svg>
+            </label>
+
+            <a href="#">Home</a>
+            <a href="#licensefilter">Bikes</a>
+            <a href="#contact">Contact</a>
+            <a href="pages/about.html">About</a>
+
+        </div>
     </nav>
-    <button class="burger">
-        <div class="bar"></div>
-    </button>
+    <section class="masthead">
+        <div class="videohead">
+            <video autoplay loop muted plays-inline src="assets/websiteloop.mp4" type="video/mp4"></video>
+        </div>   
+    </section>
+
 
     <main id="content">
-        <section class="videohead">
-            <video autoplay loop muted plays-inline src="src/websiteloop.mp4" type="video/mp4"></video>
-            <h1 class="title">
-                MotorcycList
-            </h1>
-        </section>
         
         <section class="filter">
             <div class="licensefilter">
@@ -60,38 +66,51 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa1">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia RS 125" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia RS 125" class="bikeimg">
                         <h2>Aprilia RS 125</h1>
+                            <p>15 PS</p>
+                            <p>125 CCM</p>
+                            <p>9000 RPM</p>
+                            <p>130 Vmax</p>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa1">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono 125" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia Tuono 125" class="bikeimg">
                         <h2>Aprilia Tuono 125</h1>
+                            <p>PS 15</p>
+                            <p>CCM 125</p>
+                            <p>RPM 8000</p>
+                            <p>Vmax 130</p>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa1">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia SX 125" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia SX 125" class="bikeimg">
                         <h2>Aprilia SX 125</h1>
+                            <p>PS: 15</p>
+                            <p>CCM: 125</p>
+                            <p>RPM: 8000</p>
+                            <p>Vmax: 130</p>
                     </a>
                 </div>
 
+
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia RS 660" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia RS 660" class="bikeimg">
                         <h2>Aprilia RS 660</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono 660" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia Tuono 660" class="bikeimg">
                         <h2>Aprilia Tuono 660</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia Shiver 900" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia Shiver 900" class="bikeimg">
                         <h2>Aprilia Shiver 900</h1>
                     </a>
                 </div>
@@ -99,19 +118,19 @@
 
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
                         <h2>Aprilia RSV4</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia Tuono V4" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia Tuono V4" class="bikeimg">
                         <h2>Aprilia Tuono V4</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia Dorsoduro 900" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia Dorsoduro 900" class="bikeimg">
                         <h2>Aprilia Dorsoduro 900</h1>
                     </a>
                 </div>
@@ -122,19 +141,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/bikes/bmwm1000rr.png" alt="BMW F 750 GS" class="bikeimg">
+                        <img src="assets/bikes/bmwm1000rr.png" alt="BMW F 750 GS" class="bikeimg">
                         <h2>BMW F 750 GS</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="BMW F 900 R" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="BMW F 900 R" class="bikeimg">
                         <h2>BMW F 900 R</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa2">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="BMW G 310 R" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="BMW G 310 R" class="bikeimg">
                         <h2>BMW G 310 R</h1>
                     </a>
                 </div>
@@ -142,19 +161,19 @@
                 
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/bikes/bmwm1000rr.png" alt="BMW M1000RR" class="bikeimg">
+                        <img src="assets/bikes/bmwm1000rr.png" alt="BMW M1000RR" class="bikeimg">
                         <h2>BMW M1000RR</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="BMW S 1000 RR" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="BMW S 1000 RR" class="bikeimg">
                         <h2>BMW S 1000 RR</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="BMW R 1250 GS" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="BMW R 1250 GS" class="bikeimg">
                         <h2>BMW R 1250 GS</h1>
                     </a>
                 </div>
@@ -165,19 +184,19 @@
             <div class="bikescontainer" id="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/bikes/ducatipanigalev4r.png" alt="Ducati Panigale V4R" class="bikeimg">
+                        <img src="assets/bikes/ducatipanigalev4r.png" alt="Ducati Panigale V4R" class="bikeimg">
                         <h2>Ducati Panigale V4R</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
@@ -186,19 +205,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/bikes/hondacbr1000rrrfireblade.png" alt="Honda CBR1000RR-R Fireblade" class="bikeimg">
+                        <img src="assets/bikes/hondacbr1000rrrfireblade.png" alt="Honda CBR1000RR-R Fireblade" class="bikeimg">
                         <h2>Honda CBR1000RR-R Fireblade</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
@@ -207,19 +226,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
                         <h2>Husqvarna 701 Supermoto</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
                         <h2>Husqvarna 701 Supermoto</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Husqvarna 701 Supermoto" class="bikeimg">
                         <h2>Husqvarna 701 Supermoto</h1>
                     </a>
                 </div>
@@ -228,19 +247,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/bikes/kawasakizx10rr.png" alt="Kawasaki Ninja ZX-10RR" class="bikeimg">
+                        <img src="assets/bikes/kawasakizx10rr.png" alt="Kawasaki Ninja ZX-10RR" class="bikeimg">
                         <h2>Kawasaki Ninja ZX-10RR</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Aprilia RSV4" class="bikeimg">
                         <h2>Aprilia RSV4</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
@@ -249,19 +268,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
                         <h2>KTM 1290 Super Duke R</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
                         <h2>KTM 1290 Super Duke R</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="KTM 1290 Super Duke R" class="bikeimg">
                         <h2>KTM 1290 Super Duke R</h1>
                     </a>
                 </div>
@@ -270,19 +289,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
                         <h2>MV Agusta F4 RC</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
                         <h2>MV Agusta F4 RC</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
                         <h2>MV Agusta F4 RC</h1>
                     </a>
                 </div>
@@ -291,19 +310,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/bikes/suzukigsxr1000.png" alt="Suzuki GSX-R1000" class="bikeimg">
+                        <img src="assets/bikes/suzukigsxr1000.png" alt="Suzuki GSX-R1000" class="bikeimg">
                         <h2>Suzuki GSX-R1000</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
                         <h2>MV Agusta F4 RC</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="MV Agusta F4 RC" class="bikeimg">
                         <h2>MV Agusta F4 RC</h1>
                     </a>
                 </div>
@@ -312,19 +331,19 @@
             <div class="bikescontainer">
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
                 <div onclick="location.href='#';" class="fa">
                     <a href="">
-                        <img src="src/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
+                        <img src="assets/motorcyclegray.svg" alt="Yamaha YZF-R1" class="bikeimg">
                         <h2>Yamaha YZF-R1</h1>
                     </a>
                 </div>
@@ -341,7 +360,7 @@
                     <input type="email" name="email" placeholder="Email" class="contactinput" required>
                     <textarea name="message" placeholder="Message" class="contactinput" required></textarea>
                     <p>Your email address will not be published.</p>
-                    <button type="submit">Send<img src="src/mail.svg" alt=""></button>
+                    <button type="submit">Send<img src="assets/mail.svg" alt=""></button>
                 </form>
                 </div>
             </section>
@@ -349,7 +368,7 @@
 
     <footer>
         <a href="#" class="backtotop">
-            <img src="src/arrowup.svg" alt="Back To Top">
+            <img src="assets/arrowup.svg" alt="Back To Top">
         </a>
     </footer>
     <script src="script.js" defer></script>
