@@ -276,7 +276,7 @@ input[type="checkbox"]:checked {
     align-items: start;
     gap: 20px;
     background-color: rgb(33, 33, 33);
-    border-radius: .3rem;
+    border-radius: .3rem .3rem 0 0;
     padding: 2rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     margin-bottom: -6rem;
