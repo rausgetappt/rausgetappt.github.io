@@ -128,12 +128,35 @@ body {
     height: 100%;
     overflow: hidden;
     background: black;
-    z-index: -1;
+    z-index: -2;
 }
 
 .masthead {
     height: 90vh;
     max-width: 100%;
+}
+
+.masthead h1 {
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+    z-index: -1;
+    font-size: 5rem;
+}
+
+.masthead img {
+    position: fixed;
+    width: 70px;
+    height: auto;
+    top: 70vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 #content {
