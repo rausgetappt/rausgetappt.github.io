@@ -360,6 +360,7 @@ input[type="checkbox"]:checked {
     height: 140px;
     padding-top: 15px;
     border-radius: .3rem;
+    resize: none;
 }
 
 .contactform p {
