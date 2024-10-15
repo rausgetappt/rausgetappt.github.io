@@ -54,15 +54,53 @@ body {
 /* ------------------NAVBAR------------------ */
 /* ------------------NAVBAR------------------ */
 
-.navbar {
+.burgermenu {
     position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
     background: linear-gradient(to right, #CB1517, #cb1552);
+    padding: .9rem;
     margin: 1rem .8rem;
     border-radius: .3rem;
     font-weight: 700;
     z-index: 1;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.menucontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.burgermenu a {
+    color: white;
+    height: 100%;
+    padding: 0 .4rem .25rem .4rem;
+    margin: 0 .4rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: x-large;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+}
+
+.burgermenu a:hover {
+    border-radius: .3rem;
+    border: 2px solid white;
+}
+
+#menuactive {
+    display: none;
+}
+
+.openmenu,
+.closemenu {
+    display: none;
 }
 
 .navlogos .logo {
@@ -83,37 +121,16 @@ body {
     z-index: 2;
 }
 
-nav ul {
-    padding: 1rem 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0 .4rem .25rem .4rem;
-    font-size: x-large;
-    transition: all .3s ease;
-    border: 2px solid transparent;
-}
-
-.navbar a:hover {
-    border-radius: .3rem;
-    border: 2px solid white;
-}
-
 /* ------------------MAIN------------------ */
 /* ------------------MAIN------------------ */
 /* ------------------MAIN------------------ */
 
 main {
     margin: 2rem 1rem 0 1rem;
+}
+
+main .paragraph {
+    min-height: 100vh;
 }
 
 p {

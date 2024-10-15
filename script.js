@@ -45,30 +45,30 @@ document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
   checkbox.addEventListener('change', filterDivs);
 });
 
-// Event Listener hinzufügen, um die Checkboxen zu überwachen
+// Event Listener, welcher auf Änderungen der Checkboxen prüft
 document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
   checkbox.addEventListener('change', filterDivs);
 });
 
-// Funktion, um die Divs basierend auf den Checkboxen zu filtern
+// Funktion welche die divs filtert
 function filterDivs() {
   // Checkboxen abrufen
   const checkA = document.getElementById('checka');
   const checkA1 = document.getElementById('checka1');
   const checkA2 = document.getElementById('checka2');
 
-  // Alle Divs abrufen
+  // Prüft alle divs
   const divs = document.querySelectorAll('.fa, .fa1, .fa2');
 
-  // Checken, ob alle Checkboxen nicht angekreuzt sind
+  // Prüft ob keine Checkboxen angekreuzt sind
   const noCheckboxChecked = !checkA.checked && !checkA1.checked && !checkA2.checked;
 
   divs.forEach(function(div) {
-      // Falls keine Checkbox angekreuzt ist, alle Divs anzeigen
+      // Funktion wenn keine Checkboxen angekreuzt sind werden alle angezeigt
       if (noCheckboxChecked) {
           div.style.display = 'block';
       } else {
-          // Falls Checkboxen angekreuzt sind, Divs entsprechend anzeigen oder verstecken
+          // Wenn Checkboxen angekreuzt sind werden divs entsprechend shown/hidden
           if (
               (checkA.checked && div.classList.contains('fa')) ||
               (checkA1.checked && div.classList.contains('fa1')) ||
@@ -82,7 +82,7 @@ function filterDivs() {
   });
 }
 
-// Initiales Laden der Seite
+// Lädt die Seite
 filterDivs();
 
 
