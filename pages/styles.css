@@ -3,16 +3,7 @@
 } */
 
 * {
-    /* scrollbar-color: #CB1517 white; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* ::-webkit-scrollbar {
-    background: white;
-} */
-
-::-webkit-scrollbar-thumb {
-    background: lightgray;
 }
 
 html {
@@ -137,102 +128,6 @@ p {
     font-size: larger;
 }
 
-/* ------------------LICENSE FILTER------------------ */
-/* ------------------LICENSE FILTER------------------ */
-/* ------------------LICENSE FILTER------------------ */
-
-.licensefilter {
-    position: sticky;
-    top: 6.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-    background: linear-gradient(to right, #a3a3a3, #777777);
-    margin: 1rem -.2rem;
-    border-radius: .3rem;
-    font-weight: 700;
-    user-select: none;
-}
-
-.licensefilter ul{
-    padding: .3rem 0;
-    margin: 0;
-    text-align: center;
-}
-
-.licensefilter li {
-    display: inline;
-    margin-right: 1rem;
-    padding: 0 .4rem .25rem .4rem;
-    transition: all .3s ease;
-    border: 2px solid transparent;
-}
-
-input[type="checkbox"] {
-    height: 15px;
-    width: 15px;
-    vertical-align: middle;
-    outline: none;
-    cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-    appearance: none;
-    content: url(src/check.png);
-    height: 15px;
-    width: 15px;
-}
-
-.licensefilter li:hover {
-    cursor: pointer;
-    border: 2px solid white;
-    border-radius: .3rem;
-}
-.licensefilter input:hover,
-.licensefilter label:hover {
-    cursor: pointer;
-}
-
-/* ------------------BIKE GRID------------------ */
-/* ------------------BIKE GRID------------------ */
-/* ------------------BIKE GRID------------------ */
-
-.main .bikescontainer .brandtitle {
-    display: block;
-    margin: 0;
-}
-
-.bikescontainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 15px;
-}
-
-.bikescontainer .fa {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-    text-align: center;
-    border: 2px solid transparent;
-    border-radius: .3rem;
-    padding: 1rem;
-    min-height: 350px;
-    text-decoration: none;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-
-.bikescontainer .fa:hover {
-    cursor: pointer;
-    border: 2px solid black;
-}
-
-.bikescontainer .bikeimg {
-    width: 15%;
-    min-width: 150px
-}
-
-.bikescontainer a {
-    color: black;
-    text-decoration: none;
-}
-
 /* ------------------CONTACT FORM------------------ */
 /* ------------------CONTACT FORM------------------ */
 /* ------------------CONTACT FORM------------------ */
@@ -355,7 +250,6 @@ input[type="checkbox"]:checked {
     transform: translateY(-3px);
 }
 
-
 /* ------------------MOBILE------------------ */
 /* ------------------MOBILE------------------ */
 /* ------------------MOBILE------------------ */
@@ -372,17 +266,6 @@ input[type="checkbox"]:checked {
     }
     .navbar ul {
         padding: 2rem 0;
-    }
-
-    .bikescontainer {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-    }
-    .bikescontainer .bikeimg {
-        width: 15%;
-        min-width: 100px
-    }
-    .bikescontainer .fa {
-        min-height: 200px;
     }
 
     .contactform {
