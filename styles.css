@@ -131,6 +131,10 @@ body {
     max-width: 100%;
 }
 
+video::-webkit-media-controls {
+    display: none;
+}
+
 .masthead h1 {
     color: white;
     position: fixed;
