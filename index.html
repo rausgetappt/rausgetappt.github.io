@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="assets/motorcyclewhite.svg"/>
-    <title>MotorcycList</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Zeichensatz der Webseite auf UTF-8 gesetzt -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Stellt sicher, dass die Seite im neuesten Modus im Internet Explorer läuft -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ermöglicht responsives Design, das die Breite des Geräts berücksichtigt -->
+    <link rel="icon" type="image/svg" href="assets/motorcyclewhite.svg"/> <!-- Favicon für die Seite, ein kleines Bild, das im Browser-Tab erscheint -->
+    <title>MotorcycList</title> <!-- Der Titel der Seite, der im Browser-Tab angezeigt wird -->
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zu einer externen CSS-Datei für das Styling -->
 </head>
+
 <body>
-    <div class="progressbar">
-        <div class="filled"></div>
+    <div class="progressbar"> <!-- Ein Bereich für den Fortschrittsbalken -->
+        <div class="filled"></div> <!-- Der gefüllte Teil des Fortschrittsbalkens -->
     </div>
 
-    <div class="navlogos">
-        <img class="logo" src="assets/motorcyclewhite.svg" alt="" onclick="location.href='#';">
+    <div class="navlogos"> <!-- Container für Logos in der Navigationsleiste -->
+        <img class="logo" src="assets/motorcyclewhite.svg" alt="" onclick="location.href='#';"> <!-- Bild für das Logo, das zur Startseite führt -->
         <img class="motorcyclist" src="assets/motorcyclistfont.svg" alt="MotorcycList" onclick="location.href='#';">
     </div>
 
-    <nav class="burgermenu">
+    <nav class="burgermenu"> <!-- Navigationsmenü für die Seite -->
             <a href="#">Home</a>
             <a class="mobile" href="#content">Bikes</a>
             <a class="mobile" href="#contact">Contact</a>
             <a href="pages/about.html">About</a>
         </div>
     </nav>
-    <section class="masthead">
+    <section class="masthead"> <!-- Kopfzeilenbereich der Seite -->
         <h1>MotorcycList</h1>
         <img src="assets/arrowdown.svg" alt="">
-        <div class="videodiv">
+        <div class="videodiv"> <!-- Container für ein Video -->
             <video autoplay loop muted plays-inline src="assets/websiteloop.mp4" type="video/mp4"></video>
         </div>   
     </section>
 
-
-    <main id="content">
-        
-        <section class="filter">
+    <main id="content"> <!-- Hauptinhalt der Webseite -->
+        <section class="filter"> <!-- Bereich mit Filteroptionen -->
             <div class="licensefilter">
-                <ul>
+                <ul> <!-- Liste der Filteroptionen -->
                     <li onclick="checka1.click()">
                         <input onclick="checka1.click()" type="checkbox" id="checka1" class="checkbox">
                         <label for="check">A1</label>
@@ -503,9 +502,9 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact"> <!-- Kontaktbereich -->
             <div class="contactcontainer">
-                <form action="" class="contactform">
+                <form action="" class="contactform"> <!-- Kontaktformular -->
                     <div class="contacttitle">
                         <h1>Contact</h1>
                     </div>
@@ -519,11 +518,12 @@
             </section>
     </main>
 
-    <footer>
-        <a href="#" class="backtotop">
-            <img src="assets/arrowup.svg" alt="Back To Top">
+    <footer> <!-- Fußzeile -->
+        <a href="#" class="backtotop"> <!-- Link, um wieder nach oben auf die Seite zu springen -->
+            <img src="assets/arrowup.svg" alt="Back To Top"> <!-- Pfeilsymbol für "Zurück nach oben" -->
         </a>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script> <!-- Verlinkung zu einer externen JavaScript-Datei, die das Verhalten der Webseite steuert -->
+</body>
 </body>
 </html>
