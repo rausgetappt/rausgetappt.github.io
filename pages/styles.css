@@ -129,12 +129,18 @@ main .paragraph {
     border-radius: .3rem;
     min-height: 100vh;
     margin-bottom: 1rem;
+    position: relative;
 
 }
 
 .aboutbackground h1,
 p {
     padding: .5rem 1rem;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
 }
 
 p {
