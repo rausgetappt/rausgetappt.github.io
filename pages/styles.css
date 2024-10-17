@@ -122,6 +122,17 @@ main {
 
 main .paragraph {
     min-height: 100vh;
+    margin: 0 -.2rem;
+}
+
+.aboutbackground {
+    background-color: lightgray;
+    border-radius: .3rem;
+
+}
+
+.aboutbackground p {
+    padding: 100vh 1rem;
 }
 
 p {

@@ -1,27 +1,25 @@
 /* * {
-    outline: 1px solid red;
-} */
+    outline: 1px solid red; 
+} */ /* Debugging-Rahmen um alle Elemente */
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Schriftart */
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Setzt das Scrollverhalten auf weich */
 
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
-    margin-top: 0;
+    margin-top: 0; /* Oben kein Abstand */
 }
 
 body {
-    color: black;
-    margin: 0;
+    color: black; /* Farbe auf Schwarz*/
+    margin: 0; /* Kein Seitenrand */
 }
 
-/* ------------------PROGRESSBAR------------------ */
-/* ------------------PROGRESSBAR------------------ */
 /* ------------------PROGRESSBAR------------------ */
 
 .progressbar {
@@ -30,18 +28,16 @@ body {
     width: 100%;
     height: .5rem;
     padding-bottom: 1.6rem;
-    backdrop-filter: blur(2px);
-    z-index: 1;
+    backdrop-filter: blur(2px); /* Hintergrundunschärfe */
+    z-index: 1; /* Über anderen Inhalten */
 }
 
 .filled {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #CB1517, #cb1552);
+    background: linear-gradient(to right, #CB1517, #cb1552); /* Farbverlauf */
 }
 
-/* ------------------NAVBAR------------------ */
-/* ------------------NAVBAR------------------ */
 /* ------------------NAVBAR------------------ */
 
 .burgermenu {
@@ -50,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     top: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4); /* Schatteneffekt */
     background: linear-gradient(to right, #CB1517, #cb1552);
     padding: .9rem;
     margin: 1rem .8rem;
@@ -111,8 +107,6 @@ body {
     z-index: 2;
 }
 
-/* ------------------MAIN------------------ */
-/* ------------------MAIN------------------ */
 /* ------------------MAIN------------------ */
 
 .videodiv {
@@ -179,8 +173,6 @@ video::-webkit-media-controls {
 }
 
 /* ------------------LICENSE FILTER------------------ */
-/* ------------------LICENSE FILTER------------------ */
-/* ------------------LICENSE FILTER------------------ */
 
 .filter {
     margin: 0 1rem;
@@ -239,8 +231,6 @@ input[type="checkbox"]:checked {
 }
 
 /* ------------------BIKE GRID------------------ */
-/* ------------------BIKE GRID------------------ */
-/* ------------------BIKE GRID------------------ */
 
 .main .bikescontainer .brandtitle {
     display: block;
@@ -280,8 +270,6 @@ input[type="checkbox"]:checked {
     text-decoration: none;
 }
 
-/* ------------------CONTACT FORM------------------ */
-/* ------------------CONTACT FORM------------------ */
 /* ------------------CONTACT FORM------------------ */
 
 .contactcontainer {
@@ -370,8 +358,6 @@ input[type="checkbox"]:checked {
 }
 
 /* ------------------BACK TO TOP------------------ */
-/* ------------------BACK TO TOP------------------ */
-/* ------------------BACK TO TOP------------------ */
 
 .backtotop {
     position: fixed;
@@ -400,8 +386,6 @@ input[type="checkbox"]:checked {
 }
 
 
-/* ------------------MOBILE------------------ */
-/* ------------------MOBILE------------------ */
 /* ------------------MOBILE------------------ */
 
 @media (max-width: 1100px) {
