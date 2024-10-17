@@ -23,13 +23,13 @@ body {
 /* ------------------PROGRESSBAR------------------ */
 
 .progressbar {
-    top: 0;
-    position: fixed;
+    top: 0; /* Abstand zum "top" des Bildschirms */
+    position: fixed; /* Leiste bleibt immer an dieser Stelle */
     width: 100%;
     height: .5rem;
     padding-bottom: 1.6rem;
     backdrop-filter: blur(2px); /* Hintergrundunschärfe */
-    z-index: 1; /* Über anderen Inhalten */
+    z-index: 1; /* Über anderen Inhalten anzeigen */
 }
 
 .filled {
@@ -41,38 +41,38 @@ body {
 /* ------------------NAVBAR------------------ */
 
 .burgermenu {
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: sticky; /* Menu wird immer angezeigt */
+    display: flex; /* Anzeige auf flex gesetzt */
+    justify-content: center; /* Inhalt zentriert */
+    align-items: center; /* Einzelne Elemente zentriert */
     top: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4); /* Schatteneffekt */
     background: linear-gradient(to right, #CB1517, #cb1552);
     padding: .9rem;
     margin: 1rem .8rem;
-    border-radius: .3rem;
-    font-weight: 700;
+    border-radius: .3rem; /* Abgerundete Ecken */
+    font-weight: 700; /* Dicke des Texts*/
     z-index: 1;
-    user-select: none;
-    -webkit-user-select: none;
+    user-select: none; /* Element kann nicht markiert werden */
+    -webkit-user-select: none; /* Element kann auf Apple-Geräten nicht markiert werden */
 }
 
 .menucontainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Elemente in Reihe anzeigen */
     align-items: center;
 }
 
 .burgermenu a {
     color: white;
     height: 100%;
-    padding: 0 .4rem .25rem .4rem;
+    padding: 0 .4rem .25rem .4rem; /* Abstand für jede Seite individuell definiert */
     margin: 0 .4rem;
     align-items: center;
     text-decoration: none;
-    font-size: x-large;
-    transition: all .3s ease;
-    border: 2px solid transparent;
+    font-size: x-large; /* Textgröße angepasst */
+    transition: all .3s ease; /* Fade-in-out für besseren hover-Effekt */
+    border: 2px solid transparent; /* Rand Transparent, dass Element beim hovern nicht verrutscht */
 }
 
 .burgermenu a:hover {
@@ -80,21 +80,12 @@ body {
     border: 2px solid white;
 }
 
-#menuactive {
-    display: none;
-}
-
-.openmenu,
-.closemenu {
-    display: none;
-}
-
 .navlogos .logo {
     position: fixed;
     margin: 1.5rem 0 0 1rem;
     max-height: 3rem;
     float: left;
-    cursor: pointer;
+    cursor: pointer; /* Maus auf "pointer" gesetzt */
     z-index: 2;
 }
 
@@ -126,7 +117,7 @@ body {
 }
 
 video::-webkit-media-controls {
-    display: none;
+    display: none; /* Entfernt Interaktion des Videos auf Apple-Geräten */
 }
 
 .masthead h1 {
@@ -158,14 +149,14 @@ video::-webkit-media-controls {
     background-color: white;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/9) { /* Video wird immer in 16/9 angezeigt/ Breite, Höhe wird automatisch bestimmt */
     video {
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 16/9) { /* Video wird immer in 16/9 angezeigt/ Breite, Höhe wird automatisch bestimmt */
     video {
         width: auto;
         height: 100%;
@@ -215,7 +206,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
     appearance: none;
-    content: url(assets/check.png);
+    content: url(assets/check.png); /* Wenn Checkbox aktiv, wird dieses asset eingefügt */
     height: 15px;
     width: 15px;
 }
@@ -238,9 +229,9 @@ input[type="checkbox"]:checked {
 }
 
 .bikescontainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 15px;
+    display: grid; /* Elemente als "grid" definiert */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Größe des grids bestimmt */
+    column-gap: 15px; /* Abstand zwischen grid-Elementen bestimmt */
 }
 
 .bikescontainer div {
@@ -388,13 +379,13 @@ input[type="checkbox"]:checked {
 
 /* ------------------MOBILE------------------ */
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { /* Anzeige auf Tablet angepasst */
     .navlogos .motorcyclist {
         display: none;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { /* Anzeige auf Mobil-Geräte angepasst */
     .burgermenu .mobile {
         display: none;
     }

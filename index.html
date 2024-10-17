@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> <!-- Zeichensatz der Webseite auf UTF-8 gesetzt -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Stellt sicher, dass die Seite im neuesten Modus im Internet Explorer läuft -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ermöglicht responsives Design, das die Breite des Geräts berücksichtigt -->
-    <link rel="icon" type="image/svg" href="assets/motorcyclewhite.svg"/> <!-- Favicon für die Seite, ein kleines Bild, das im Browser-Tab erscheint -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Stellt sicher, dass die Seite in neuen Browsern läuft -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ermöglicht responsives Design -->
+    <link rel="icon" type="image/svg" href="assets/motorcyclewhite.svg"/> <!-- Favicon für die Seite/ kleines Bild im Browser-Tab -->
     <title>MotorcycList</title> <!-- Der Titel der Seite, der im Browser-Tab angezeigt wird -->
-    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zu einer externen CSS-Datei für das Styling -->
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
 </head>
 
 <body>
-    <div class="progressbar"> <!-- Ein Bereich für den Fortschrittsbalken -->
-        <div class="filled"></div> <!-- Der gefüllte Teil des Fortschrittsbalkens -->
+    <div class="progressbar"> <!-- Ein Bereich für die Progressbar -->
+        <div class="filled"></div> <!-- Der gefüllte Teil der Progressbar -->
     </div>
 
-    <div class="navlogos"> <!-- Container für Logos in der Navigationsleiste -->
+    <div class="navlogos"> <!-- Container für Logos in der Navbar -->
         <img class="logo" src="assets/motorcyclewhite.svg" alt="" onclick="location.href='#';"> <!-- Bild für das Logo, das zur Startseite führt -->
         <img class="motorcyclist" src="assets/motorcyclistfont.svg" alt="MotorcycList" onclick="location.href='#';">
     </div>
@@ -30,7 +30,7 @@
         <h1>MotorcycList</h1>
         <img src="assets/arrowdown.svg" alt="">
         <div class="videodiv"> <!-- Container für ein Video -->
-            <video autoplay loop muted plays-inline src="assets/websiteloop.mp4" type="video/mp4"></video>
+            <video autoplay loop muted plays-inline src="assets/websiteloop.mp4" type="video/mp4"></video> <!-- Video wird automatisch, stumm und endlos abgespielt -->
         </div>   
     </section>
 
@@ -53,11 +53,11 @@
                 </ul>
             </div>
 
-            <h1>Aprilia</h1> <!-- Überschrift für die Marke Aprilia -->
+            <h1>Aprilia</h1> <!-- Überschrift für die Marke -->
             <div class="bikescontainer"> <!-- Container für die Bikes -->
-                <div class="fa"> <!-- Einzelner Container für ein bestimmtes Bike -->
+                <div class="fa"> <!-- Einzelner Container für ein bestimmten der Führerscheinklasse -->
                     <a> <!-- Verlinkt das gesamte Bike, kann zu einer detaillierten Seite über das Bike führen -->
-                        <img src="assets/bikes/apriliarsv4.png" alt="Aprilia RSV4" class="bikeimg"> <!-- Bild mit passendem Alt-Text -->
+                        <img src="assets/bikes/apriliarsv4.png" alt="Aprilia RSV4" class="bikeimg"> <!-- Fügt das Bild ein -->
                         <h2>Aprilia RSV4</h1> <!-- Modellname des Bikes -->
                             <p>PS: 217</p> <!-- Leistung des Bikes in PS -->
                             <p>CCM: 1099</p> <!-- Hubraum des Bikes in Kubikzentimetern (CCM) -->
@@ -508,22 +508,22 @@
                     <div class="contacttitle">
                         <h1>Contact</h1>
                     </div>
-                    <input type="text" name="name" placeholder="Name" class="contactinput" required>
-                    <input type="email" name="email" placeholder="Email" class="contactinput" required>
-                    <textarea name="message" placeholder="Message" class="contactinput" required></textarea>
+                    <input type="text" name="name" placeholder="Name" class="contactinput" required> <!-- Textfeld für Name -->
+                    <input type="email" name="email" placeholder="Email" class="contactinput" required> <!-- Textfeld für Email -->
+                    <textarea name="message" placeholder="Message" class="contactinput" required></textarea> <!-- Textfeld für Nachricht -->
                     <p>Your email address will not be published.</p>
-                    <button type="submit">Send<img src="assets/mail.svg" alt=""></button>
+                    <button type="submit">Send<img src="assets/mail.svg" alt=""></button> <!-- Button um eingetragene Daten abzusenden -->
                 </form>
                 </div>
             </section>
     </main>
 
-    <footer> <!-- Fußzeile -->
+    <footer>
         <a href="#" class="backtotop"> <!-- Link, um wieder nach oben auf die Seite zu springen -->
             <img src="assets/arrowup.svg" alt="Back To Top"> <!-- Pfeilsymbol für "Zurück nach oben" -->
         </a>
     </footer>
-    <script src="script.js" defer></script> <!-- Verlinkung zu einer externen JavaScript-Datei, die das Verhalten der Webseite steuert -->
+    <script src="script.js" defer></script> <!-- Verlinkung zur JavaScript-Datei -->
 </body>
 </body>
 </html>

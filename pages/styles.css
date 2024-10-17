@@ -1,6 +1,8 @@
+/* !!!DIESES STYLESHEET IST NAHEZU IDENTISCH MIT "../styles.css", WESHALB NUR DIE ÄNDERUNGEN KOMMENTIERT WURDEN!!! */
+
 /* * {
     outline: 1px solid red;
-} */
+} */ /* Debugging-Rahmen um alle Elemente */
 
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,8 +24,6 @@ body {
 }
 
 /* ------------------PROGRESSBAR------------------ */
-/* ------------------PROGRESSBAR------------------ */
-/* ------------------PROGRESSBAR------------------ */
 
 .progressbar {
     top: 0;
@@ -41,8 +41,6 @@ body {
     background: linear-gradient(to right, #CB1517, #cb1552);
 }
 
-/* ------------------NAVBAR------------------ */
-/* ------------------NAVBAR------------------ */
 /* ------------------NAVBAR------------------ */
 
 .burgermenu {
@@ -85,15 +83,6 @@ body {
     border: 2px solid white;
 }
 
-#menuactive {
-    display: none;
-}
-
-.openmenu,
-.closemenu {
-    display: none;
-}
-
 .navlogos .logo {
     position: fixed;
     margin: 1.5rem 0 0 1rem;
@@ -113,42 +102,38 @@ body {
 }
 
 /* ------------------MAIN------------------ */
-/* ------------------MAIN------------------ */
-/* ------------------MAIN------------------ */
 
 main {
     margin: 2rem 1rem 0 1rem;
 }
 
 main .paragraph {
-    margin: 0 -.2rem;
+    margin: 0 -.2rem; /* Abstand des Elements auf Breite der Navbar angepasst */
 }
 
 .aboutbackground {
-    background-color: lightgray;
-    border-radius: .3rem;
-    min-height: 100vh;
-    margin-bottom: 1rem;
-    position: relative;
+    background-color: lightgray; /* Hintergrundfarbe */
+    border-radius: .3rem; /* Ecken des Elements abgerundet */
+    min-height: 100vh; /* Element mindestens so groß wie Bildschirmhöhe */
+    margin-bottom: 1rem; /* Abstand zum nächsten Element */
+    position: relative; /* Relativ positioniert um Position der Elemente innerhalb zu ändern */
 
 }
 
 .aboutbackground h1,
 p {
-    padding: .5rem 1rem;
+    padding: .5rem 1rem; /* Abstand Text */
 }
 
 .author {
-    position: absolute;
+    position: absolute; /* Position verändert */
     bottom: 0;
 }
 
 p {
-    font-size: larger;
+    font-size: larger; /* Textgröße verändert */
 }
 
-/* ------------------CONTACT FORM------------------ */
-/* ------------------CONTACT FORM------------------ */
 /* ------------------CONTACT FORM------------------ */
 
 .contactcontainer {
@@ -240,8 +225,6 @@ p {
 }
 
 /* ------------------BACK TO TOP------------------ */
-/* ------------------BACK TO TOP------------------ */
-/* ------------------BACK TO TOP------------------ */
 
 .backtotop {
     position: fixed;
@@ -269,8 +252,6 @@ p {
     transform: translateY(-3px);
 }
 
-/* ------------------MOBILE------------------ */
-/* ------------------MOBILE------------------ */
 /* ------------------MOBILE------------------ */
 
 @media (max-width: 1100px) {

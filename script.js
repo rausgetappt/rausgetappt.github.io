@@ -1,46 +1,44 @@
 // ----------Progressbar----------
-
+// Selektiert das Leisten-Element
 const filled = document.querySelector('.filled');
 
+// Aktualisiert die Breite der Leiste basierend auf dem Scroll-Progress
 function update() {
-    filled.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100)}%`
+    filled.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100)}%`;
     requestAnimationFrame(update);
 }
 
+// Aktualisiert die Scroll-Leiste
 update();
 
 
 // ----------Checkbox keep state----------
-
+// Klickt alle Checkboxen einmal an
 document.querySelectorAll("input[type='checkbox']").forEach((element) => {element.click();});
 
+// Speichert den Zustand der Checkboxen im localStorage
 function saveCheckboxStates() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach((checkbox) => {
-      localStorage.setItem(checkbox.id, checkbox.checked);
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
     });
-  }
-  
-  function loadCheckboxStates() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach((checkbox) => {
-      const savedState = localStorage.getItem(checkbox.id);
-      if (savedState !== null) {
-        checkbox.checked = savedState === 'true';
-      }
-    });
-  }
-  
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('change', saveCheckboxStates);
-  });
-  
-  document.addEventListener('DOMContentLoaded', loadCheckboxStates);
+}
 
+// Lädt den Zustand der Checkboxen aus localStorage
+function loadCheckboxStates() {
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        const savedState = localStorage.getItem(checkbox.id);
+        if (savedState !== null) checkbox.checked = savedState === 'true';
+    });
+}
+
+// Fügt Event Listener für Änderungen der Checkboxen hinzu und lädt den Speicher
+document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', saveCheckboxStates);
+});
+
+document.addEventListener('DOMContentLoaded', loadCheckboxStates);
 
 // ----------Motorcycle filter----------
-
 document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
   checkbox.addEventListener('change', filterDivs);
 });
@@ -85,7 +83,6 @@ function filterDivs() {
 // Lädt die Seite
 filterDivs();
 
-
 // ----------Back to top animation----------
-
+// Zeigt den Back To top button erst an, wenn die gescrollt wird
 window.onscroll = () => document.querySelector('.backtotop').classList.toggle('show', window.scrollY > document.documentElement.scrollHeight * 0.05);
